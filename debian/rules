@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=sh
+
+%:
+	dh $@ --with python2,python3 --buildsystem pybuild
+
+override_dh_installchangelogs:
+	# TODO see https://github.com/amoffat/sh/pull/192
+	dh_installchangelogs # CHANGELOG.md

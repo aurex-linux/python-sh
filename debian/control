@@ -1,0 +1,46 @@
+Source: python-sh
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Tianon Gravi <admwiggin@gmail.com>,
+ Paul Tagliamonte <paultag@debian.org>
+Build-Depends: debhelper (>= 9),
+ dh-python,
+ python-all (>= 2.6.6-3~),
+ python-setuptools,
+ python3-all (>= 3.1~),
+ python3-setuptools
+Standards-Version: 3.9.6
+Homepage: https://github.com/amoffat/sh/
+Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/python-sh/trunk/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-modules/packages/python-sh/trunk/
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.1
+
+Package: python-sh
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python subprocess interface
+ sh (previously pbs) is a full-fledged subprocess replacement for Python 2.6 -
+ 3.2 that allows you to call any program as if it were a function:
+ .
+   from sh import ifconfig
+   print ifconfig("eth0")
+ .
+ sh is not a collection of system commands implemented in Python.
+ .
+ This package provides Python 2 module bindings only.
+
+Package: python3-sh
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Python 3 subprocess interface
+ sh (previously pbs) is a full-fledged subprocess replacement for Python 2.6 -
+ 3.2 that allows you to call any program as if it were a function:
+ .
+   from sh import ifconfig
+   print ifconfig("eth0")
+ .
+ sh is not a collection of system commands implemented in Python.
+ .
+ This package provides Python 3 module bindings only.
