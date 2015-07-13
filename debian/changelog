@@ -1,3 +1,9 @@
+python-sh (1.11-1~aurex1) trusty; urgency=medium
+
+  * Rebuild for aurex trusty 14.04
+
+ -- Sandra Villanueva Gavino <savilga@gmail.com>  Mon, 13 Jul 2015 17:11:52 +0200
+
 python-sh (1.11-1) unstable; urgency=medium
 
   * Update to 1.11 upstream release.
